@@ -13,7 +13,6 @@ void main()
   float u[row_r][row_c] = { ax,ay,az,0,0,0 };
   float state_curr[row_r][row_c] = {1,1,1,1,1,1};
   float state_next[row_r][row_c] = {0,0,0,0,0,0};
-  float state_prev[row_r][row_c] = {0,0,0,0,0,0};
 
   while(flag)
   {

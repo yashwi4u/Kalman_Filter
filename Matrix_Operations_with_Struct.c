@@ -176,10 +176,8 @@ void main()
   struct array U = mat_define(row_r,row_c); // Defining control vector
   U.arr[0][0]=ax; U.arr[1][0]=ay; U.arr[2][0]=az;
   struct array state = mat_define(row_r,row_c); //Defining current state
-  struct array P = mat_define();
+  struct array P = mat_define(square,square);
   state.arr[0][0]=state.arr[1][0]=state.arr[2][0]=state.arr[3][0]=state.arr[4][0]=state.arr[5][0]=1;
-
-  struct array state_prev = mat_define(row_r,row_c);
   struct array state_next = mat_define(row_r,row_c);
   while(flag)
   {
